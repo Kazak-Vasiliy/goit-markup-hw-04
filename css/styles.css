@@ -11,6 +11,7 @@ body{
     --backgroundcolor: #2F303A;
     --section-color: #F5F4FA;
     --border-color:#EEEEEE;
+    --icons-color:#AFB1B8;
     --header-border-color: #ECECEC;
     --main-font: 'roboto', sans-serif;
     --second-font: 'raleway', sans-serif;
@@ -26,6 +27,7 @@ ul{
 p{
     margin:0;
 }
+
 img{
     display: block;
     height: auto;
@@ -177,6 +179,10 @@ padding: 200px 0;
 .about-item{
     width: 270px;
 }
+.about-icon{
+    width: 70px;
+    height:70px;
+}
 .about-title{
     font-weight: 700;
     font-size: 14px;
@@ -235,14 +241,14 @@ padding: 200px 0;
     margin-top: 10px;
     margin-bottom: 16px;
 }
-.team-list{
+.social-list{
     display: flex;
     justify-content: center;
    
 }
 .team-item{
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 }
 .team-item + .team-item{
     margin-left: 10px
@@ -255,7 +261,7 @@ padding: 200px 0;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color:#AFB1B8;
+    color:var(--icons-color);
   
 }
 .social-icon{
@@ -268,13 +274,40 @@ height: 20px;
     background-color: var(--variable-color);
     color: var(--white-color);
 }
-
+.client-list{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.client-item{
+    width: 170px;
+    height: 92px;
+    }
+.client-link{
+    width: 100%;
+    height: 100%;
+ border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: flex;
+padding: 16px 32px;
+fill: var(--icons-color);
+}
+.client-icon{
+width: 106px;
+height: 60px;
+}
+.client-link:hover,
+.client-link:focus{
+    fill: var(--variable-color);
+    border: 1px solid var(--variable-color);
+}
 /* ----------------OUR-TEAM----------- */
 /* -------------------FOOTER-------------- */
 .footer{
     color: var(--white-color);
     background-color:var(--backgroundcolor) ;
     padding: 60px 0;
+    display: flex;
 }
 
 .address-list{
