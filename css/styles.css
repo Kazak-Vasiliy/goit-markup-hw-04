@@ -296,7 +296,8 @@ height: 20px;
  border: 1px solid #AFB1B8;
 border-radius: 4px;
 display: flex;
-padding: 16px 32px;
+justify-content: center;
+align-items: center;
 fill: var(--icons-color);
 }
 .client-icon{
